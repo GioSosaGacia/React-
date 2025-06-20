@@ -29,6 +29,6 @@ console.log(nuevo1);
 const nuevo2 = tecnologias.filter((tech2) => tech2 === "JavaScript");
 console.log(nuevo2);
 
-// include revisa si existe un elemento en un arreglo
+// include revisa si existe un elemento en un arreglo, retorna true o false
 const nuevo3 = tecnologias.includes("PostgreSQL");
 console.log(nuevo3);
