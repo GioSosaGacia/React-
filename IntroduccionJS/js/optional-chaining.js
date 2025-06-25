@@ -1,8 +1,9 @@
-import { sumar1 } from "./funciones.js"
+// Podemos usar alias para no tener probleas con los nombres con as podemos renombrar la funcion 
+import entre, { sumar1 as add, multiplicar, restar } from "./funciones.js"
 
-// Optional chaining se defino con (?), permite acceder a las propiedades o metodos de un objeto
-//valida si una propiedad existe, si existe lo ejecuta si no manda undefine pero el resto del codigo se sigue ejecutando, sin usarlo truea el mismo 
-// seusa mucho en respuestas de API, en una base de datos cuando no retorna todos los campos etc..
+//Optional chaining se defino con (?), permite acceder a las propiedades o metodos de un objeto
+//valida si una propiedad existe, si existe lo ejecuta si no manda undefine, pero el resto del codigo se sigue ejecutando, sin usarlo truena el mismo 
+//se usa mucho en respuestas de API, en una base de datos cuando no retorna todos los campos etc..
 
 const alumno = {
     nombre: "Juan",
@@ -40,5 +41,14 @@ user && console.log("Usuario autenticado");
 
 // Modulos de ESC6
 // con ESC6 podemos exportar una funcion para despues importarla en otros archivos 
-const resultados = sumar1(5,12);
+const resultados = add(102,12);
 console.log(resultados);
+
+const multiplicar1 = multiplicar(10,5);
+console.log(multiplicar1);
+
+const dividir = entre(10,5);
+console.log(dividir);
+
+const restar1= restar(100, 35);
+console.log(`El resulrado de laresta es: ${restar1}`);
